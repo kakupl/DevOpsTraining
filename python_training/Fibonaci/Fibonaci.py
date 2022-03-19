@@ -1,5 +1,5 @@
 print("Welcome in simply fibonacii founder")
-print("Standard fibonacii start for 0 \n This is start from 0")
+print("Standard fibonacii start for 0 \n This is start from 1")
 SelectCalculatorFunction = int(input("Please input searching fibonachi.."))
 
 
