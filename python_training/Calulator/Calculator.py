@@ -56,3 +56,4 @@ elif SelectCalculatorFunction == 4:
     print("You selected divide of numbers")
     calculator = Calculator
     print("Divide", calculator.divide_add(GetFirstValue, GetSecondValue))
+
