@@ -22,17 +22,22 @@ class Calculator:
     def __init__(self):
         pass
 
-    def sum_add(self, secconvalue):
-        return self + secconvalue
+    def sum_add(x, y):
+        count = x + y
+        return count
 
-    def subtracts_add(self, secondvalue):
-        return self - secondvalue
+    def subtracts_add(x, y):
+        substract = x - y
+        return substract
 
-    def multiply_add(self, secondvalue):
-        return self * secondvalue
+    def multiply_add(x, y):
+        multiply = x * y
+        return multiply
 
-    def divide_add(self, secondvalue):
-        return self * secondvalue
+    def divide_add(x, y):
+        if y != 0:
+            divide = x / y
+            return int(divide)
 
 
 if SelectCalculatorFunction == 1:
@@ -42,12 +47,12 @@ if SelectCalculatorFunction == 1:
 elif SelectCalculatorFunction == 2:
     print("You selected subtracts of numbers")
     calculator = Calculator
-    print("Subtracts", calculator.subtracts_add(GetSecondValue, GetSecondValue))
+    print("Subtracts", calculator.subtracts_add(GetFirstValue, GetSecondValue))
 elif SelectCalculatorFunction == 3:
     print("You selected multiply of numbers")
     calculator = Calculator
-    print("Multiply", calculator.multiply_add(GetSecondValue, GetSecondValue))
+    print("Multiply", calculator.multiply_add(GetFirstValue, GetSecondValue))
 elif SelectCalculatorFunction == 4:
     print("You selected divide of numbers")
     calculator = Calculator
-    print("Divide", calculator.divide_add(GetSecondValue, GetSecondValue))
+    print("Divide", calculator.divide_add(GetFirstValue, GetSecondValue))
